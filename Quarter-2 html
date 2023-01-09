@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="C:\Users\lenovo\OneDrive\Desktop\ir\Visual Studio Code\GamingTWT Website\Gaming Career\quarter-2.css" rel="stylesheet" type="text/css">
+    <title>Unknown</title>
+</head>
+<body>
+    
+<header>
+    <div class="Logo">
+        <img src="https://i.ibb.co/VQLdDp2/Qt2-Logo.png">
+    </div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <a href="#" class="toggle-login2">
+        <div class="Log-tog2">
+        <button class="Btn-Log">Get Started</button>
+        </div>
+    </a>
+    <nav class="navlinks">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Content</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Our Events</a></li>
+
+            <a href="#" class="toggle-login">
+                <div class="Log-tog">
+                <button class="Btn-Log">Get Started</button>
+                </div>
+            </a>
+
+        </ul>
+    </nav>
+</header>
+<div class="Login-form2">
+<div class="Login-form">
+
+    <form action="#" method="post">
+        <h2>Login Form</h2>
+    
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button class="Sub-log" type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container2" style="background-color:#9f9797">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    </div>
+    </div>
+
+<div class="Content">
+
+    <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" checked="checked">
+        <label for="tabfree">EG 8-9: Streaming Tools</label>
+        <div class="tab">
+            <h2>CONTENT &emsp13;<i class="arrow bottom"></i></h2>
+        <div class="tabPad">
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHead">Group number</th>
+                    <th class="tabHead3 ego2">Group 7</th>
+                    <th>Date</th>
+                    <th class="tabHead3">08/11/2022</th>
+                </tr>
+                </table>
+                <table class="tabClass">
+                <tr>
+                    <th class="tabHead">Members :  
+                        (Put besides name active, or not  active )
+                        </th>
+                    <th class="tabHead3">Fallare, Kimi Lance T.<br>
+                        Ferrer Gabiel S.<br>
+                        Valerie Jan O. Beloncio<br>
+                        James Daniel M. Veran<br>
+                        Dela Cruz, John Migue D.<br>
+                        Toby Ernest d. None
+                        </th>
+                </tr>
+            </table>
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHeadExp">EXPERIENCE 1: WHICH OF THE VARIOUS BROADCASTING SOFTWARE SHOULD I USE IN STREAMING?</th>
+                </tr>
+            </table>
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHead">Describe the broadcasting software your group chose</th>
+                    <th class="tabHead2">OBS -OBS (Open Broadcaster Software) is a free (free as in pizza after 30 minutes), open source, community supported platform. It is highly configurable and allows for immense user creation. It has a lot of default features and is easily modifiable by third party services.</th>
+                </tr>
+            </table>
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHead">List down the reasons for how your group arrived at the decision</th>
+                    <th class="tabHead2"><li>Free as in Free pizza</li>
+                        <li>Immensely configurable</li>
+                        <li>Allows for third party services</li>
+                        <li>Standard</li>
+                        <li>open source and community supported</li>
+                        </th>
+                </tr>
+            </table>
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHeadExp">EXPERIENCE 2: WHAT EQUIPMENT DO I NEED TO LIVE STREAM?</th>
+                </tr>
+            </table>
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHead">Brainstorming Details:</th>
+                    <th class="tabHead2">We wanted to find out the basic and cheap equipment that is needed. We also accounted for the stuff we have at home. Lastly, we also stated that we will stream as a group.</th>
+                </tr>
+            </table>
+            <table class="tabClass">
+                <tr>
+                    <th class="tabHead">List down the equipment you will use and explain why you chose that equipment.</th>
+                    <th class="tabHead2">Camera - Needed to broadcast our face<br>
+                        Microphone - so we can talk to our audience<br>
+                        Stable internet - For a smooth streaming experience<br>
+                        Working setup (laptop, desktop) - So we can stream, as our games and OBS only work on desktops or laptops<br>
+                        Lighting - So our ugly face is clear<br>
+                        Capture card (?) - To record our game (if we use consoles)
+                        </th>
+                </tr>
+            </table>
+
+            </div>
+        </div>
+    
+        <input type="radio" id="tabsilver" name="mytabs">
+        <label for="tabsilver">EG 10: What's Your Content?</label>
+        <div class="tab">
+            <h2>Content &emsp13;<i class="arrow bottom"></i></h2>
+            <div class="tabPad2">
+                <div class="eg10TopBg">
+          <h1>5 Whys of our topic</h1>
+          <p>Gaming</p>
+          </div>
+            <table class="tabClass2">
+                <tr>
+                    <th class="tabHeadEg10">WHY? <i class="arrow right"></i></th>
+                    <th class="tabHead2Eg10">We chose gaming content because it's one of the most common and popular streaming content when it comes to the streaming career.</th>
+                </tr>
+            </table>
+            <table class="tabClass2">
+                <tr>
+                    <th class="tabHeadEg10">WHY? <i class="arrow right"></i></th>
+                    <th class="tabHead2Eg10">Because watching gaming content contains a lot of entertainment, social interaction, and connectivity against other people, creating a wholesome community.</th>
+                </tr>
+            </table>
+            <table class="tabClass2">
+                <tr>
+                    <th class="tabHeadEg10">WHY? <i class="arrow right"></i></th>
+                    <th class="tabHead2Eg10">People watch stream for a variety of reasons, but one of the most enticing is the sense of community it creates. 
+                        While watching, viewers and gamers can converse, forging friendships that endure long after the video has ended.</th>
+                </tr>
+            </table>
+            <table class="tabClass2">
+                <tr>
+                    <th class="tabHeadEg10">WHY? <i class="arrow right"></i></th>
+                    <th class="tabHead2Eg10">Gaming content community creates this kind of connections between other people which creates social interactions, entertainments, wholesome moments, and many more.</th>
+                </tr>
+            </table>
+            <table class="tabClass2">
+                <tr>
+                    <th class="tabHeadEg10">WHY? <i class="arrow right"></i></th>
+                    <th class="tabHead2Eg10">Gaming content is entertaining because of its community. 
+                        The social interactions playing video games with friends and strangers is like doing something enjoyable together in the real world. 
+                        Video game play with friend fosters relationships. 
+                        Because you all play video games together, you develop a closer bond.</th>
+                </tr>
+            </table>
+            <table class="bottomTop">
+                <tr>
+                    <th>Group #7</th>
+                    <th>Section A08-10-S1-2</th>
+                </tr>
+                <tr>
+                    <th>Teacher: John Albert Buenaventura</th>
+                    <th>EG 10 Experience 1</th>
+                </tr>
+            </table>
+        </div>
+        </div>
+    
+        <input type="radio" id="tabgold" name="mytabs">
+        <label for="tabgold">EG 11: Stream Design</label>
+        <div class="tab">
+            <h2>Content Slideshow &emsp13;<i class="arrow bottom"></i></h2>
+        
+            <div class="Slides">
+                <img class="mySlides" src="https://i.ibb.co/fkQT0Fk/Eg-11.png">
+                <img class="mySlides" src="https://i.ibb.co/RSdgBgD/eg-11-2.png">
+                <img class="mySlides" src="https://i.ibb.co/0ZPnSr9/Eg-11-3.png">
+                <img class="mySlides" src="https://i.ibb.co/XXmsfPn/Eg-11-4.png">
+                <img class="mySlides" src="https://i.ibb.co/t4P1Pmg/Eg-11-5.png">
+              <div class="buttonSlide">
+                <button class="slideButton" onclick="plusDivs(-1)">&#10094; Previews</button>
+                <button class="slideButton" onclick="plusDivs(1)">Next &#10095;</button>
+                </div>
+              </div>
+
+        
+        </div>
+    
+        <input type="radio" id="tabCrystal" name="mytabs">
+        <label for="tabCrystal">EG 12: Guidelines To keep in Mind</label>
+        <div class="tab">
+            <h2>Content &emsp13;<i class="arrow bottom"></i></h2>
+            <div class="tabPad">
+                <table class="tabClass3">
+                    <tr>
+                        <th class="tabHead">Group Number</th>
+                        <th class="tabHead3 ego2">Group 7</th>
+                        <th>Date</th>
+                        <th class="tabHead3">November 28, 2022</th>
+                    </tr>
+                </table>
+                <table class="tabClass3">
+                    <tr>
+                        <th class="tabHead">Members :  
+                            (Put besides name active, or not  active )
+                            </th>
+                        <th class="tabHead3">Beloncio, Valerie Jane<Br>
+                            Fallarme, Kimi Lance<br>
+                            Verano, James Daniel<br>
+                            Ferrer, Gabriel<br>
+                            Nones, Toby Ernest<br>
+                            Dela Cruz, John Miguel
+                            </th>
+                    </tr>
+                </table>
+                <table class="tabClass3">
+                    <tr>
+                        <th class="tabHeadExp">EXPERIENCE 1: HOW WILL THE DATA PRIVACY ACT AFFECT OUR STREAM?</th>
+                    </tr>
+                </table>
+                <table class="tabClass3">
+                    <tr>
+                        <th class="tabHead4">
+                            <p>Complete the table below by listing down the do’s and don’ts in streaming based on what you have learned from the Data Privacy Act.</p>
+                        <table class="tabClass3 ego4">
+                            <tr>
+                                <th class="tabHead5">DO'S</th>
+                                <th class="tabHead5">DON'TS</th>
+                            </tr>
+                            <tr>
+                                <th class="tabHead2 ego3"><a class="SpecColor">1.</a>While registering on e-learning platforms, making secure passwords. Passwords must comprise upper- and lowercase letters, numbers, and, if feasible, symbols. They must also be at least 12 characters long.<br>
+                                    <a class="SpecColor">2.</a> Think before posting<br>
+                                    <a class="SpecColor">3.</a> Use trustworthy websites<br>
+                                    <a class="SpecColor">4.</a> Use cryptic passcodes or passwords. Additionally suggested is the use of different passwords for every account.<br>
+                                    <a class="SpecColor">5.</a> The controller of personal information is required to put reasonable and suitable safeguards in place to guard against unavoidable risks such unintentional loss or destruction.<br>
+                                    <a class="SpecColor">6.</a> Watch out for phishing traps that are sent via email and for indicators of a cyber scam.<br>
+                                    <a class="SpecColor">7.</a> Use unique backdrops, to prevent the unintentional revealing of personal information.</th>
+                                <th class="tabHead2"><a class="SpecColor">1.</a> Sharing submissions for an unlimited time. (When the content no longer needs to be shared, delete it.)<br>
+                                    <a class="SpecColor">2.</a> Spamming the chat.<br>
+                                    <a class="SpecColor">3.</a> Sharing specific information<br>
+                                    <a class="SpecColor">4.</a> Sharing account passwords<br>
+                                    <a class="SpecColor">5.</a> Avoid clicking on links from unknown or untrustworthy sources.<br>
+                                    <a class="SpecColor">6.</a> Do not open any suspicious emails or attachments.<br>
+                                    <a class="SpecColor">7.</a> Never share your location to your viewers.</th>
+                            </tr>
+                        </table>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <input type="radio" id="tabemerald" name="mytabs">
+        <label for="tabemerald">EG 13: Stream Outline</label>
+        <div class="tab">
+            <h2>Content &emsp13;<i class="arrow bottom"></i></h2>
+            <div class="tabPad">
+            <table class="tabClass4">
+                <tr>
+                    <th class="timeTop ego5">Time</th>
+                    <th class="topicTop ego5">Topic</th>
+                    <th class="ego5">Activity</th>
+                    <th class="allotmentTop ego5">Time Allotment (mins)</th>
+                    <th class="screenTop ego5">Screen</th>
+                    <th class="audioTop ego5">Audio</th>
+                </tr>
+            </table>
+            <table class="tabClass4">
+                <tr>
+                    <th class="timeTop ego7">4:00 - 4:05 pm</th>
+                    <th class="topicTop ego7">Icebreaker and introductions</th>
+                    <th class="ego7">Introduction</th>
+                    <th class="allotmentTop ego7">5 mins</th>
+                    <th class="screenTop ego7">Video</th>
+                    <th class="audioTop ego7">Video & Audio/mic</th>
+                </tr>
+            </table>
+            <table class="tabClass4">
+                <tr>
+                    <th class="timeTop ego7">4:05 - 4:50 pm</th>
+                    <th class="topicTop ego7">Video Game itself and stories with fellow streamers</th>
+                    <th class="ego7">show/discuss the video game and playing with viewers</th>
+                    <th class="allotmentTop ego7">45 mins</th>
+                    <th class="screenTop ego7">Video</th>
+                    <th class="audioTop ego7">Video & Audio/mic</th>
+                </tr>
+            </table>
+            <table class="tabClass4">
+                <tr>
+                    <th class="timeTop ego7">4:50 - 5:05 pm</th>
+                    <th class="topicTop ego7">Continuation of Stories and mentoning interactions with the audience</th>
+                    <th class="ego7">conclusion for the topic</th>
+                    <th class="allotmentTop ego7">15 mins</th>
+                    <th class="screenTop ego7">Video</th>
+                    <th class="audioTop ego7">Video & Audio/mic</th>
+                </tr>
+            </table>
+            <table class="tabClass4">
+                <tr>
+                    <th class="timeTop ego7">5:05 - 5:07 pm</th>
+                    <th class="topicTop ego7">Thank you, farewell, and goodbyes</th>
+                    <th class="ego7">Outro</th>
+                    <th class="allotmentTop ego7"> 2 mins</th>
+                    <th class="screenTop ego7">Video</th>
+                    <th class="audioTop ego7">Video & Audio/mic</th>
+                </tr>
+            </table>
+        </div>
+        </div>
+      </div>
+
+      <div class="stream-Layout">
+        <h1>Stream Layout</h1>
+
+<div class="Poster">
+    <div class="PosterC">
+        <h2>Promotion Poster</h2>
+        <p>This is our <b>Promotion Poster</b>. It's one of our promotional plans of aiming to seek and gain attention for our entertainment. We made this for us to spread our reputation in spreading happy and positive vibes all over the streaming career![&#128516;][&#128151;] We encourage people to watch us and join us in our fun daily talking and bonding with our daily audience and our beloved streamer![&#128150;]<br>
+            <br>
+            It promotes the silly and group [&#128053;](the multiple animals)[&#128035;] aims of our stream plan. Since its meant to be a funny group based channel.[&#128516;]<br>
+            <br>
+            Our Poster is already filled with entertainment! We are ready to meet you, create memories with you, make entertainments with you, and spend time with you in our daily live![&#128516;]<br>
+        <br>
+    Fun Fact: The poster Presents that we are mainly a comedic animal character group.[&#128516;]
+
+</p>
+    </div>
+    <img src="https://i.ibb.co/QmqsHHn/QT2-Postere.png" class="Imgcenter">
+</div>
+
+
+
+<div class="stream-Intro">
+    <img src="https://i.ibb.co/vZvLqVb/QT2-Intro.png" class="Imgcenter2">
+    <div class="stream-IntroC">
+        <h2>Stream Introduction Layout</h2>
+        <p>This is our Stream introduction layout, The spelling is meant to be bad, as the lore of the group is that it's the drawings of a child.<br>
+        <br>
+        Every Streamer's Stream Introduction are just a greeting to the viewers and to allot some extra time for the streamers to prepare incase of any sudden ocassion or other reasons. Introduction part is wherein we are getting ready and plotting everything exactly so that we will not further disturb the flow of our live streaming.</p>
+    </div>
+</div>
+
+<div class="stream-Setup">
+    <img src="https://i.ibb.co/q14BWmB/QT2-Setup.png" class="Imgcenter2">
+    <div class="stream-SetupC">
+        <h2>Live Stream Layout</h2>
+        <p>
+            This layout represents what the acutual stream will look like, with the recording of the game, streamers, and chat present.<br>
+            <br>
+            Having chat viewable during streams is general stream culture, as it allows full screen viewers to view chat, for streamers to more easily show their interactions with chat, and for chat to react to themselves. Ad addendum that when a stream is clipped, chat is automatically visible.
+        </p>
+    </div>
+</div>
+</div>
+
+<div class="tableDesc">
+
+<div class="Desc">
+    <div class="Microphone">
+        <h2>Stream Materials and Specs</h2>
+        <table class="hoverEffect">
+            <tr>
+                <th class="material-Desc">Their webcams are no different, with this model capable of streaming 1080p video. <br>
+                    The Aukey FHD Webcam is equipped with a 1/2.9-inch CMOS image sensor, which can output 1080p video at 30fps. This webcam also has built-in microphones using noise-reduction technology, and has an adjustable mount that clips onto most monitors.<br>
+                    The Aukey FHD Webcam is equipped with a 1/2.9-inch CMOS image sensor, which can output 1080p video at 30fps. This webcam also has built-in microphones using noise-reduction technology, and has an adjustable mount that clips onto most monitors.
+                </th>
+                <th class="material">Camera<p>Aukey FHD Webcam</p><h4><a href="https://www.aukey.com/products/aukey-overview-full-hd-video-1080p-webcam">More Info Here</a></h4>
+                </th>
+                <th class="Imageri">
+                    <img src="https://i.ibb.co/ZX4YsHc/QT2-Camera.png" 
+                    style="width: 100%;">
+                </th>
+            </tr>
+            </table>
+        <table class="hoverEffect">
+            <tr>
+                <th class="Imageri">
+                    <img src="https://i.ibb.co/NW2jrmQ/BM-800-Microphone.jpg" 
+                    style="width: 100%;">
+                </th>
+                <th class="material">Microphone<p>BM-800 Set Condenser Microphone</p><h4><a href="https://www.amazon.com/ZINGYOU-Microphone-BM-800-Adjustable-Double-layer/dp/B07FNGKZ9D?th=1">More Info Here</a></h4>
+                </th>
+                <th class="material-Desc">With a high-quality shock mount, can effectively reduce noise
+                    The ball-type anti-wind foam cap can keep your microphone clean, protect microphone against wind and impurity interference.
+                    Ideal for broadcasting, home studio recording, field recording, etc.</th>
+            </tr>
+            </table>
+            <table class="hoverEffect"> 
+            <tr>
+                <th class="material-Desc">PLDTFiber - PLDT offers a wide range of telecommunications and digital services across the Philippines' most extensive fiber optic backbone, and fixed line and cellular networks.<br>
+                Converge - It operates fiber optic broadband networks, Internet Protocol television, cable television, and cable Internet in the country.<br>
+            Both are good internets! Just make sure to take note about how strong and how it operates according to your city.</th>
+                <th class="material">Internet Router<p>PLDTfiber/Converge</p><h4><a href="https://www.yugatech.com/guides/globe-pldt-converge-sky-unli-fiber-internet-plans-compared-2022/">More Info Here</a></h4>
+                </th>
+                <th class="Imageri">
+                    <img src="https://i.ibb.co/pLZvHFx/QT2-Router.jpg" 
+                    style="width: 100%;">
+                </th>
+            </tr>
+            </table>
+            <table class="hoverEffect">
+            <tr>
+                <th class="Imageri">
+                    <img src="https://i.ibb.co/9VBXLh9/QT-headset.png" 
+                    style="width: 100%;">
+                </th>
+                <th class="material">Headset<p>MKEPS Gaming Headphones LED Wired Headset</p><h4><a href="https://shopee.ph/MKEPS-Gaming-Headphones-LED-Wired-Headset-Noise-Canceling-With-Microphone-For-PC-Laptop-Computer-i.500516932.8386330162?sp_atk=17bc77c1-5ab3-4a36-8d56-086132b83707&xptdk=17bc77c1-5ab3-4a36-8d56-086132b83707">More Info Here</a></h4>
+                </th>
+                <th class="material-Desc">The headset has double plugs ,it is compatible for desktop. if you need to use the headset on laptop and cellphone, please add-on the splitter.<br>
+                    With 3.5mm interface, it is suitable for smart phone, Tablet PC, laptop and other 3.5mm audio devices, has  Noise Canceling With Microphone For PC Laptop Computer,
+                    Adjustable omnidirectional microphone can pick up sounds with great sensitivity and reduces background noise for better in-game chats.<br>
+                    The 40mm（7color Gaming headset is 50mm)  drive unit can bring you vivid sound field, sound clarity, sound shock feeling, Provide a good teaching environment.<br>
+                    Uses soft over-ear pads, which is comfortable for long time wearing. Adjustable headband is suitable for different head size.<br>
+                    Equipped with a rotary volume controller to control volume, and one key to control Mic on and off. Plug and play.</th>
+            </tr>
+            </table>
+            <table class="hoverEffect">
+            <tr>
+                <th class="material-Desc">This keyboard has a specification of 1000Hz frequency of response, Waterproof Construction, has a key life of 8 millions keystrokes, contains multimedia buttons (Work in combinaation Fn+), and it's wireless.<br>
+                It has a high-quality and strong durability, It lights RGB below keys. It comes with a free mouse pad and it's affordable.</th>
+                <th class="material">Mouse and Keyboard<p>Zeus K001 Gaming keyboard and Mouse</p><h4><a href="https://shopee.ph/Zeus-K001(-Amazing-Swiftness-%EF%BC%89Gaming-Keyboard-And-Mouse-Bundle-(-High-Performance-)-i.57239068.2603793152?sp_atk=5a763bba-c9f2-4da7-9828-8abbf0034a01&xptdk=5a763bba-c9f2-4da7-9828-8abbf0034a01">More Info Here</a></h4>
+                </th>
+                <th class="Imageri">
+                    <img src="https://i.ibb.co/rQ907tS/QT2-Keyboard-and-mouse.jpg" 
+                    style="width: 100%;">
+                </th>
+            </tr>
+            </table>
+            <table class="hoverEffect">
+            <tr>
+                <th class="Imageri">
+                    <img src="https://i.ibb.co/PcgPjWB/QT2-Setup2.png" 
+                    style="width: 100%;">
+                </th>
+                <th class="material">Desktop Setup<p></p><h4><a href="https://www.racaaph.com/pc-build-budget-gaming-philippines-10k/">Setup Here</a></h4><h4><a href="https://www.cdw.com/content/cdw/en/articles/hardware/building-vs-buying-pc.html">Building Vs Buying PC</a></h4>
+                </th>
+                <th class="material-Desc">Pre-built computers can get you up and running quickly but often have limited components or other drawbacks that can come back to bite you. Building a PC is the route to choose in terms of quality. However, components can get expensive, and user error can end up costing hundreds of dollars. Either way, there are several factors to consider that can make a significant difference no matter which option you end up choosing.<br>
+                    When you buy individual computer components, they often come with extra spare parts that pre-built computers do not. These additional parts can sometimes save you from costly repair bills or unnecessary tech support visits. Better Overall Quality.</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
