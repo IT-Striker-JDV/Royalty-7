@@ -480,5 +480,50 @@
 </div>
 </div>
 
+<script>
+
+    
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navBarLink = document.getElementsByClassName('navlinks')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navBarLink.classList.toggle('active')
+    })
+
+    const toggleLogin = document.getElementsByClassName('toggle-login')[0]
+    const toggleLogin2 = document.getElementsByClassName('toggle-login2')[0]
+    const LoginForm = document.getElementsByClassName('Login-form2')[0]
+    const CancelButton = document.getElementsByClassName('cancelbtn')[0]
+
+    toggleLogin.addEventListener('click', () => {
+        LoginForm.classList.toggle('active')
+    })
+    toggleLogin2.addEventListener('click', () => {
+        LoginForm.classList.toggle('active')
+    })
+    CancelButton.addEventListener('click', () => {
+        LoginForm.classList.toggle('active')
+    })
+
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+
 </body>
 </html>
