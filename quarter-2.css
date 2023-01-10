@@ -1,0 +1,926 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 11, 68, 0.89);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.379);
+    color: white;
+}
+.Logo {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.Logo img {
+    width: 65px;
+    border-radius: 50px;
+    border: solid 5px rgba(0, 0, 0, 0.29);
+}
+.navlinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navlinks li {
+    list-style: none;
+}
+.navlinks li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-family: arial;
+    display: block;
+    padding: 4px 8px 4px 8px;
+    margin: 12px;
+    transition: 0.1s;
+}
+.navlinks li a:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+    color: #0087ca;
+    text-decoration: underline;
+    /* border-left: 3px solid rgb(104, 102, 102);
+    border-right: 3px solid rgb(104, 102, 102);
+    box-shadow: -10px 0px 6px inset rgb(197, 7, 7),
+    10px 0px 13px inset rgb(197, 7, 7); */
+}
+.toggle-button {
+    position: absolute;
+    top: 1.85rem;
+    right: 1.50rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+.toggle-login2 {
+    display: none;
+}
+.Log-tog button {
+    background-color: rgb(0, 59, 252);
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+.Log-tog2 button {
+    background-color: rgb(0, 59, 252);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+.Btn-Log:hover {
+    background-color: rgb(0, 0, 197);
+}
+@media (max-width: 910px) {
+    .toggle-button {
+        display: flex;
+    }
+    .toggle-login2 {
+        position: absolute;
+        right: 4rem;
+        top: 1.45rem;
+        display: flex;
+    }
+    .navlinks {
+        display: none;
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlinks ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navlinks li {
+        text-align: center;
+    }
+    .navlinks li a {
+        padding: .5rem 1rem;
+        border: solid 2px black;
+    }
+    .navlinks li a:hover {
+        transform: scale(1.03);
+    }
+    .navlinks.active {
+        display: flex;
+    }
+    .toggle-login {
+        display: none;
+    }
+}
+.Login-form2 {
+    position: absolute;
+    display: none;
+    top: 100px;
+    width: 100%;
+    z-index: 2;
+}
+.Login-form2.active {
+    display: flex;
+}
+.Login-form {
+    position: relative;
+    width: 40%;
+    left: 30%;
+    background-color: #333;
+}
+@media (max-width: 1100px) {
+    .Login-form {
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+}
+@media (max-width: 1000px) {
+    .Login-form {
+        position: relative;
+        width: 70%;
+        left: 15%;
+    }
+}
+@media (max-width: 750px) {
+    .Login-form {
+        position: relative;
+        width: 70%;
+        left: 15%;
+    }
+}
+form {border: 3px solid #8f8f8f;
+    font-family: monospace;}
+    
+form h2 {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+    
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    .Sub-log {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+    
+button:hover {
+    opacity: 0.8;
+}
+    
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+    
+.container {
+    padding: 16px;
+    color: white;
+}
+.container2 {
+    padding: 16px;
+}
+    
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+    
+    /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.Poster {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+.Poster .PosterC {
+    margin: 0;
+    color: white;
+    width: 65%;
+    /* border: solid 2px white; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.199);
+    transition: 0.2s;
+}
+.Poster .PosterC:hover {
+    background-color: rgba(255, 255, 255, 0.491);
+    transition: 0.2s;
+    color: black;
+}
+.PosterC h2, .PosterC p {
+    margin: 5px;
+    border: 2px solid black;
+    font-family: arial;
+}
+.PosterC h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.PosterC p {
+    padding: 5px;   
+    text-align: justify;
+    font-size: 1.55rem;
+}
+@media (max-width: 1200px) {
+    .PosterC p {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 1100px) {
+    .PosterC h2 {
+        font-size: 1.8rem;
+    }
+    .PosterC p {
+        font-size: 1.23rem;
+    }
+}
+@media (max-width: 1000px) {
+    .PosterC h2 {
+        font-size: 1.48rem;
+    }
+    .PosterC p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 850px) {
+    .PosterC h2 {
+        font-size: 1.25rem;
+    }
+    .PosterC p {
+        font-size: .86rem;
+    }
+}
+@media (max-width: 700px) {
+    .PosterC h2 {
+        font-size: 1.1rem;
+    }
+    .PosterC p {
+        font-size: .72rem;
+    }
+}
+@media (max-width: 600px) {
+    .PosterC h2 {
+        font-size: .9rem;
+    }
+    .PosterC p {
+        font-size: .56rem;
+    }
+}
+@media (max-width: 500px) {
+    .PosterC h2 {
+        font-size: .75rem;
+    }
+    .PosterC p {
+        font-size: .45rem;
+    }
+}
+
+
+.stream-Layout {
+    padding: 5px;
+    margin: 5px;
+    background: linear-gradient(140deg, #00203fff, rgba(138, 222, 184, 0.765));
+    border: 3px ridge white;
+}
+
+.stream-Layout h1 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 0;
+    color: white;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.228);
+    width: 20%;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stream-Intro {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+.stream-Intro .stream-IntroC {
+    margin: 0;
+    width: 49%;
+    color: white;
+    /* border: solid 2px white; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.199);
+    transition: 0.2s;
+}
+.stream-Intro .stream-IntroC:hover {
+    background-color: rgba(255, 255, 255, 0.491);
+    transition: 0.2s;
+    color: black;
+    transition: 0.2;
+}
+.stream-IntroC h2, .stream-IntroC p {
+    margin: 5px;
+    border: solid 2px black;
+    font-family: arial;
+}
+.stream-IntroC h2 {
+    text-align: center;
+}
+.stream-IntroC p {
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+.stream-Setup {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: row;
+}
+.stream-Setup .stream-SetupC {
+    margin: 0;
+    width: 49%;
+    color: white;
+    /* border: solid 2px white; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.199);
+    transition: 0.2s;
+}
+.stream-Setup .stream-SetupC:hover {
+    background-color: rgba(255, 255, 255, 0.491);
+    transition: 0.2s;
+    color: black;
+}
+.stream-SetupC h2, .stream-SetupC p {
+    margin: 5px;
+    border: 2px solid Black;
+    font-family: arial;
+}
+.stream-SetupC h2 {
+    text-align: center;
+}
+.stream-SetupC p {
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1100px) {
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 1000px) {
+    .stream-IntroC h2, .stream-SetupC h2 {
+        font-size: 1.2rem;
+    }
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 850px) {
+    .stream-IntroC h2, .stream-SetupC h2 {
+        font-size: 1rem;
+    }
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: .76rem;
+    }
+}
+@media (max-width: 700px) {
+    .stream-IntroC h2, .stream-SetupC h2 {
+        font-size: .9rem;
+    }
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: .61rem;
+    }
+}
+@media (max-width: 600px) {
+    .stream-IntroC h2, .stream-SetupC h2 {
+        font-size: .7rem;
+    }
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: .49rem;
+    }
+}
+@media (max-width: 500px) {
+    .stream-IntroC h2, .stream-SetupC h2 {
+        font-size: .6rem;
+    }
+    .stream-IntroC p, .stream-SetupC p {
+        font-size: .4rem;
+    }
+}
+
+.Imgcenter {
+    display: block;
+    margin-left: auto;
+    /* margin-right: auto;   */
+    width: 34%;
+}
+.Imgcenter2 {
+    display: block;
+    /* margin-left: auto; */
+    margin-right: auto;
+    width: 50%;
+}
+
+.row {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  .column h2 {
+    text-align: center;
+    margin: 3px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+.tableDesc {
+    padding: 10px;
+}
+
+.Desc h2 {
+    margin: .4rem;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+    background: rgba(0, 0, 0, 0.409);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Desc {
+    border: 5px solid rgba(175, 175, 175, 0.655);
+    background: linear-gradient(150deg,rgba(3, 17, 62, 0.811), rgba(14, 42, 103, 0.596));
+    transition: .5s;
+}
+table {
+    width: 100%;
+    padding: 5px;
+    border-spacing: .4rem;
+    color: white;
+    transition: .3s;
+}
+.hoverEffect:hover {
+    background: rgba(255, 255, 255, 0.502);
+    color: black;
+    border-radius: 20px;
+    transform: scale(1.01);
+    transition: .3s;
+}
+.hoverEffect:hover .material-Desc {
+    border: 2px solid black;
+}
+.hoverEffect:hover .material {
+    border: 2px solid black;
+}
+.hoverEffect:hover .Imageri {
+    border: 2px solid black;
+}
+th {
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.material-Desc {
+    text-align: justify;
+    vertical-align: top;
+    font-family: Arial;
+    font-weight: lighter;
+}
+.material {
+    width: 15%;
+    vertical-align: top;
+    font-family: helvetica;
+    font-weight: lighter;
+}
+.material p {
+    text-align: center justify;
+    font-size: .95rem;
+}
+.material a {
+    color: red;
+}
+.Imageri {
+    width: 15%;
+}
+
+@media (max-width: 1020px) {
+    .tableDesc, .material p {
+        font-size: .8rem;
+    }
+}
+@media (max-width: 980px) {
+    .tableDesc, .material p {
+        font-size: .7rem;
+    }
+}
+@media (max-width: 825px) {
+    .tableDesc, .material p {
+        font-size: .6rem;
+    }
+} 
+@media (max-width: 680px) {
+    .tableDesc, .material p {
+        font-size: .45rem;
+    }
+}
+@media (max-width: 555px) {
+    .tableDesc, .material p {
+        font-size: .35rem;
+    }
+}
+@media (max-width: 485px) {
+    .tableDesc, .material p {
+        font-size: .25rem;
+    }
+}
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 50px auto; */
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    background: #e2e2e2;
+    font-weight: bold;
+    margin: .5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: grey;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+}
+
+.mytabs .tab {
+    width: 100%;  
+    background: rgba(255, 255, 255, 0.829);
+    order: 1;
+    display: none;
+    border-radius: 10px;
+    border: 3px solid red;
+    transition: 0.5s;
+}
+
+.mytabs label:hover {
+    transform: scale(1.07);
+    transition: 0.2s;
+    background: #fff;
+}
+
+
+
+.mytabs .tab  h2 {
+    margin: 1rem;
+    font-family: 'Arial';
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+    transition: 0.9s;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transform: scale(1.01);
+}
+
+@media (max-width: 1147px) {
+    .mytabs label {
+        width: 49%;
+    }
+}
+.tabPad {
+    padding: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.tabClass {
+    color: black;
+    border-spacing: 0;
+    padding: 0;
+    text-align: left;
+    font-family: sans-serif;
+}
+.tabClass th {
+    border: 1px solid black;
+}
+.tabClass .tabHead {
+    width: 25%;
+}
+.tabClass .tabHead2 {
+    padding-bottom: 1.5rem;
+    color: red;
+    font-weight: lighter;
+}
+.tabClass .tabHead3 {
+    color: red;
+    font-weight: lighter;
+}
+.tabClass .ego2 {
+    width: 40%;
+}
+.tabClass .tabHeadExp {
+    background-color: orange;
+}
+
+
+.tabPad2 {
+    margin-bottom: 30px;
+    padding: 1px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+
+}
+.eg10TopBg {
+    background-color: darkcyan;
+    text-align: center;
+    padding: 1px;
+    font-family: helvetica;
+}
+.tabClass2 {
+    color: black;
+    padding: .5;
+    border-spacing: .1;
+    font-family: Arial;
+}
+.tabClass2 th {
+    border: 1px solid black;
+}
+.tabClass2 .tabHeadEg10 {
+    width: 15%;
+    background-color: rgb(180, 180, 180);
+}
+.tabClass2 .tabHead2Eg10 {
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(180, 180, 180, 0.347);
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.bottom {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.bottomTop {
+    color: black;
+    background-color: darkcyan;
+    text-align: left;
+    padding: 1px;
+    font-family: helvetica;
+}
+.bottomTop th {
+    border: none;
+}
+
+.mySlides {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px double red;
+}
+.Slides {
+    padding: 10px;
+}
+.buttonSlide {
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.slideButton {
+    margin: 10px;
+    width: 15%;
+    padding: 5px;
+    background-color:rgb(0, 0, 197);
+    color: white;
+    border-radius: 10px;
+}
+
+
+.tabClass3 {
+    color: black;
+    border-spacing: 0;
+    padding: 0;
+    text-align: left;
+    font-family: sans-serif;
+}
+.tabClass3 th {
+    border: 1px solid black;
+}
+.tabClass3 .tabHead {
+    width: 25%;
+}
+.tabClass3 .tabHeadExp {
+    background-color: orange;
+}
+.tabClass3 .ego2 {
+    width: 40%;
+}
+.tabClass3 .tabHead2 {
+    padding-bottom: 1.5rem;
+    color: black;
+    font-weight: lighter;
+    vertical-align: top;
+}
+.tabClass3 .ego3 {
+    width: 50%;
+}
+.tabClass3 .ego4 {
+    padding: 0px 15px 15px 15px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabClass3 .tabHead3 {
+    color: red;
+    font-weight: lighter;
+}
+.tabClass3 .tabHead4 {
+    padding: 0;
+}
+.tabClass3 .tabHead4 p {
+    margin: .5rem;
+    font-weight: lighter;
+}
+.tabClass3 .tabHead5 {
+    background-color: rgba(240, 71, 71, 0.842);
+    text-align: center;
+}
+.tabClass3 .SpecColor {
+    color: red;
+}
+
+@media (max-width: 543px) {
+    .tabClass3 th {
+        font-size: 11px;
+    }
+    .tabClass th {
+        font-size: 11px;
+    }
+}
+@media (max-width: 442px) {
+    .tabClass3 th {
+        font-size: 9px;
+    }
+    .tabClass th {
+        font-size: 9px;
+    }
+}
+
+
+.tabClass4 {
+    color: black;
+    border-spacing: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: lighter;
+    font-family: helvetica;
+    
+}
+.tabClass4 th {
+    border: 1px solid black;
+}
+.tabClass4 .timeTop {
+    width: 13%;
+}
+.tabClass4 .topicTop {
+    width: 22%;
+}
+.tabClass4 .allotmentTop {
+    width: 17%;
+}
+.tabClass4 .screenTop {
+    width: 10%;
+}
+.tabClass4 .audioTop {
+    width: 15%;
+}
+.tabClass4 .ego5 {
+    background:rgba(240, 71, 71, 0.842);
+    font-weight: bold;
+}
+.tabClass4 .ego7 {
+    font-weight: lighter;
+}
+@media (max-width: 907px) {
+    .tabClass4 th {
+        font-size: 13px;
+    }
+}
+@media (max-width: 775px) {
+    .tabClass4 th {
+        font-size: 10px;
+    }
+}
+@media (max-width: 655px) {
+    .tabClass4 th {
+        font-size: 8px;
+    }
+}
+@media (max-width: 514px) {
+    .tabClass4 th {
+        font-size: 5px;
+    }
+}
